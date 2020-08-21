@@ -1,0 +1,1 @@
+place into the /ext directory of a phpBB 3.3+ forum install

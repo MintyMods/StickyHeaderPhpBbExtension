@@ -1,0 +1,10 @@
+/* Edit by Minty to sticky header */
+.fixed {
+	position: -webkit-sticky;
+    position: sticky;
+	position: fixed;
+	top:0; 
+	left:0;
+	width: 100%; 
+	z-index: 999;
+}
