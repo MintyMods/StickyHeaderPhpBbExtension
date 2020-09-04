@@ -1,8 +1,10 @@
 <!-- MINTY Sticky Header JS import Modifications Start -->
 <script>
-    document.addEventListener("DOMContentLoaded", function (event) {
-        initMintyStickyHeader();
-    });     
+    if ({STICKY_HEADER_ENABLED} == 1) {
+        document.addEventListener("DOMContentLoaded", function (event) {
+            initMintyStickyHeader();
+        });     
+    }
 </script>
 {% INCLUDEJS 'minty_stickyheader.js' %}
 <!-- MINTY Sticky Header JS import Modifications End -->

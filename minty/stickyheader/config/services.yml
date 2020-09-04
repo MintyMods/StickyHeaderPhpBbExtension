@@ -1,0 +1,19 @@
+services:
+    minty.stickyheader.controller.ucp:
+        class: minty\stickyheader\controller\ucp_controller
+        arguments:
+            - '@dbal.conn'
+            - '@language'
+            - '@request'
+            - '@template'
+            - '@user'
+
+    minty.stickyheader.listener:
+        class: minty\stickyheader\event\main_listener
+        arguments:
+            - '@language'
+            - '@template'
+            - '@config'
+            - '@user'
+        tags:
+            - { name: event.listener }
